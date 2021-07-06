@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>OBO Help Desk</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+
+      crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+
+crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+
+integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+
+crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @font-face { font-family: Fjalla One; src: url('Fjalla_One/FjallaOne-Regular.ttf'); } 
+        .navbar{
+            margin-bottom: 50px !important;
+        }
+        body { 
+    padding-top: 65px; 
+        }
+.searcharea {
+  position: relative;
+  color: white;
+  margin: 0px;
+  padding-right:0px;
+  padding-left:0px;
+  width:100%;
+}
+
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  padding-left: 5%;
+}
+.lower-left
+{
+    position: absolute;
+    top: 24%;
+    left: 15%;
+}
+* {
+      box-sizing: border-box;
+   }
+   .autocomplete {
+      position: absolute;
+      top: 62%;
+      left: 18%;
+      width: 50%;
+      background-color: white;
+   }
+   input {
+      border: none;
+      background-color: #f1f1f1;
+      padding: 4%;
+      font-size: 2vw;
+      width: 50%;
+      border-radius: 5%;
+   }
+   input[type="text"] {
+      background-color: white;
+      width: 100%;
+   }
+   input[type="submit"] {
+      background-color: black;
+      color: #fff;
+      cursor: pointer;
+   }
+   .autocomplete-items {
+      position: absolute;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      top: 100%;
+      left: 0;
+      right: 0;
+   }
+   .autocomplete-items div {
+      padding: 10px;
+      cursor: pointer;
+      border: 1px solid black;
+      border-bottom: 1px solid #d4d4d4;
+      background-color: white;
+      color: black;
+   }
+   .autocomplete-items div:hover {
+      background-color: dodgerblue;
+   }
+   .autocomplete-active {
+      background-color: rgb(30, 255, 169) !important;
+      color: #ffffff;
+   }
+   html {
+    scroll-behavior: smooth;
+  }
+  .list-group{
+    padding-top: 4%;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+  }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="container-fluid"> <a class="navbar-brand" href="#" style="font-family: 'Fjalla One', sans-serif;">HELP
+            CENTER</a> <a href = '#Resources' style="color:dodgerblue; font-family: 'Fjalla One', sans-serif;">RESOURCES</a> </div>
+      </nav>
+    </div>
+    <div class="searcharea"> <img src="houston.png" alt="Houston" style="width:100%;">
+      <div class="top-left">
+        <h1 style="font-family: 'Fjalla One', sans-serif; font-size: 2vw;">WELCOME TO THE HOUSTON HELP DESK</h1>
+      </div>
+      <div class="lower-left" style="padding-left: 3%;">
+        <h1 style="font-family: 'Fjalla One', sans-serif; font-size: 8vw">What can we help you with?</h1>
+      </div>
+      <form autocomplete="off">
+        <div class="autocomplete" style="width:60%; font-family: 'Fjalla One'">
+        <input id="searchField" type="text" name="animal" placeholder="SEARCH" />
+        </div>
+        <!-- <input type="submit" /> -->
+        </form>
+    </div>
+    <div class="container-fluid"> 
+      <h1 style="padding-top: 2.5%; font-family: 'Fjalla One', sans-serif; font-size: 4vw; text-align: center;">
+         ALL ARTICLES
+        </h1>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary" style = "font-weight:bold; font-size: 2.5vw;">STARTING A BUSINESS</li>
+        <a href="#" class="list-group-item list-group-item-action">
+          Which business structure is best for me?
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">How to register a sole proprietorship</a>
+        <a href="#" class="list-group-item list-group-item-action">How to file an LLC</a>
+        <a href="#" class="list-group-item list-group-item-action">The difference between S and C corporations</a>
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">See More >></a>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-primary" style = "font-weight:bold; font-size: 2.5vw;">GETTING CERTIFIED</li>
+      
+        <a href="#" class="list-group-item list-group-item-action">
+          What is an MWDBE?
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">How to register a sole proprietorship</a>
+        <a href="#" class="list-group-item list-group-item-action">How to file an LLC</a>
+        <a href="#" class="list-group-item list-group-item-action">The difference between S and C corporations</a>
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">See More >></a>
+      </ul>
+    </div>
+    <div class="container-fluid" id = "Resources" style="padding-top: 3%;">
+      <h1 style="font-family: 'Fjalla One', sans-serif; font-size: 4vw; text-align: center; padding-bottom: 1%">RESOURCES</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script>
+      function autocomplete(searchEle, arr) {
+         var currentFocus;
+         searchEle.addEventListener("input", function(e) {
+            var divCreate,
+            b,
+            i,
+            fieldVal = this.value;
+            var already = [];
+            closeAllLists();
+            if (!fieldVal) {
+               return false;
+            }
+            currentFocus = -1;
+            divCreate = document.createElement("DIV");
+            divCreate.setAttribute("id", this.id + "autocomplete-list");
+            divCreate.setAttribute("class", "autocomplete-items");
+            this.parentNode.appendChild(divCreate);
+            for (var keys in arr) {
+                var value = arr[keys];
+                var fieldArr = fieldVal.split(" ")
+                for(a = 0; a < value.length-1; a++)
+                {
+                for(i = 0; i < fieldArr.length; i++)
+                {
+                if (value[a].includes(fieldArr[i]) && !already.includes(keys)) {
+                  b = document.createElement("DIV");
+                  b.innerHTML += keys;
+                  already.push(keys);
+                  b.innerHTML += "<input type='hidden' value='" + keys + "'>";
+                  b.addEventListener("click", function(e) {
+                     searchEle.value = this.getElementsByTagName("input")[0].value;
+                     window.location.href = arr[this.getElementsByTagName("input")[0].value][arr[this.getElementsByTagName("input")[0].value].length-1];
+                     closeAllLists();
+                  }
+                  );
+                  divCreate.appendChild(b);
+               }
+            }
+           }
+            }
+         });
+         searchEle.addEventListener("keydown", function(e) {
+            var autocompleteList = document.getElementById(
+               this.id + "autocomplete-list"
+            );
+            if (autocompleteList)
+               autocompleteList = autocompleteList.getElementsByTagName("div");
+            if (e.keyCode == 40) {
+               currentFocus++;
+               addActive(autocompleteList);
+            }
+            else if (e.keyCode == 38) {
+               //up
+               currentFocus--;
+               addActive(autocompleteList);
+            }
+            else if (e.keyCode == 13) {
+               e.preventDefault();
+               if (currentFocus > -1) {
+                  if (autocompleteList) autocompleteList[currentFocus].click();
+               }
+            }
+         });
+         function addActive(autocompleteList) {
+            if (!autocompleteList) return false;
+               removeActive(autocompleteList);
+            if (currentFocus >= autocompleteList.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = autocompleteList.length - 1;
+            autocompleteList[currentFocus].classList.add("autocomplete-active");
+         }
+         function removeActive(autocompleteList) {
+            for (var i = 0; i < autocompleteList.length; i++) {
+               autocompleteList[i].classList.remove("autocomplete-active");
+            }
+         }
+         function closeAllLists(elmnt) {
+            var autocompleteList = document.getElementsByClassName("autocomplete-items");
+            for (var i = 0; i < autocompleteList.length; i++) {
+               if (elmnt != autocompleteList[i] && elmnt != searchEle) {
+                  autocompleteList[i].parentNode.removeChild(autocompleteList[i]);
+               }
+            }
+         }
+         document.addEventListener("click", function(e) {
+            closeAllLists(e.target);
+         });
+      }
+      var animals = {"giraffe": ["long", "tall", "https://en.wikipedia.org/wiki/Giraffe"], "tiger": ["fierce", "striped", "https://en.wikipedia.org/wiki/Tiger"], "lion": ["fierce", "proud", "https://en.wikipedia.org/wiki/Lion"], "dog": ["friendly", "furry", "https://en.wikipedia.org/wiki/Dog"],"cow": ["spotted", "milk", "https://en.wikipedia.org/wiki/Cow"],"bull": ["beef", "spotted", "https://en.wikipedia.org/wiki/Bull"],"cat": ["rude", "furry", "https://en.wikipedia.org/wiki/Cat"],"cheetah": ["furry", "spotted", "https://en.wikipedia.org/wiki/Cheetah"]};
+      autocomplete(document.getElementById("searchField"), animals);
+   </script>
+  </body>
+</html>
